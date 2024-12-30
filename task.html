@@ -96,34 +96,71 @@
 
         <!-- Side bar -->
         <nav class="h-full w-60 fixed top-0 left-0 bg-white">
-            <!-- Logo -->
-            <div class="h-20 text-[40px] text-center font-semibold border-b border-gray-600">
-                Logo
-            </div>
-            <!-- Logo -->
+            <div class="bg-[#ff782c]">
+                <!-- Logo -->
+                <div class="h-20 text-[40px] text-center font-semibold">
+                    Logo
+                </div>
+                <!-- Logo -->
+    
+                <div class="px-2 py-0.5">
+                    <div class="flex items-start bg-[#ff9e68]/50 text-white space-x-3 p-4 rounded-xl">
+                        <div class="">
+                            <i class="fa-solid fa-wallet text-[45px] text-white"></i>
+                        </div>
+                        <div class="leading-none">
+                            <h4 class="text-[18px] font-semibold leading-normal">$12345.677</h4>
+                            <small class="text-[11px] text-zinc-200">Withdraw Money</small>
+                        </div>
+                    </div>
 
-            <ul class="text-stone-700">
-                <li class="flex items-center cursor-pointer py-3 px-6 text-[15px] font-semibold group/btn hover:bg-slate-200/60">
+                    <div class="grid grid-cols-2 gap-1.5 mt-1.5 cursor-default">
+                        <div class="flex flex-col items-center space-y-1.5 text-white rounded-lg py-3">
+                            <div class="text-2xl text-white">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="text-[15px] text-center leading-none">
+                                <h4 class="text-[18px] font-semibold mb-0.5">2024k</h4>
+                                <small class="text-zinc-200">
+                                    Following
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col items-center space-y-1.5 text-white rounded-lg py-3">
+                            <div class="text-2xl text-white">
+                                <i class="fa-solid fa-user-plus"></i>
+                            </div>
+                            <div class="text-[15px] text-center leading-none">
+                                <h4 class="text-[18px] font-semibold mb-0.5">2024k</h4>
+                                <small class="text-zinc-200">
+                                    Following
+                                </small>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+
+            <ul class="text-stone-700 mt-5">
+                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold text-stone-500">Main Menu</h3>
+
+                <li class="flex items-center cursor-pointer py-3 px-8 text-[15px] font-semibold group/btn hover:bg-slate-200/60">
                     <i class="fa-solid fa-house mr-1 text-[19px] transition-all duration-500 group-hover/btn:text-[#ff782c]"></i>
                     <p class="group-hover/btn:text-[#ff782c] group-hover/btn:translate-x-2 transition-all duration-500">
                         Trang chủ
                     </p>
                 </li>
 
-                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold">kiếm tiền</h3>
+                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold text-stone-500">kiếm tiền</h3>
 
                 <li
-                    class="flex items-center cursor-pointer py-3 px-6 text-[15px] font-semibold bg-orange-200/30 text-[#ff782c]">
+                    class="flex items-center cursor-pointer py-3 px-8 text-[15px] font-semibold bg-orange-200/30 text-[#ff782c]">
                     <i class="fa-solid fa-list-check mr-1 text-[19px]"></i>
                     <p class="hover:text-[#ff782c]">
                         Nhiệm vụ
                     </p>
                 </li>
-
-                <li>
-
-                </li>
-
             </ul>
 
         </nav>
@@ -131,11 +168,15 @@
         <main class="pt-16 ml-60">
             <div class="p-10">
                 <h2 class="mb-8 text-[22px] font-semibold flex items-center leading-normal">Nhiệm vụ<p class="ml-3 leading-normal text-base text-orange-500 italic">1/1</p> </h2>
-                <section class="">
-                    <div>
-
+                <section>
+                    <div class="text-2xl font-semibold inline-flex gap-7">
+                        <button class="underline decoration-2 decoration-orange-500 underline-offset-8">Tất cả</button>
+                        <button class="text-zinc-400 transition-all duration-300 underline-offset-8 hover:text-zinc-900 hover:underline hover:decoration-2 hover:decoration-orange-500 hover:underline-offset-4">Nhiệm vụ</button>
+                        <button class="text-zinc-400 transition-all duration-300 underline-offset-8 hover:text-zinc-900 hover:underline hover:decoration-2 hover:decoration-orange-500 hover:underline-offset-4">Hoàn thành</button>
+                    </div>
+                    <div class="mt-7 w-full inline-block space-y-3.5">
                         <!-- cart -->
-                        <div class="p-5 w-full rounded-lg bg-white">
+                        <div class="p-5 w-full rounded-xl bg-white shadow-lg shadow-gray-300/50">
                             <!-- trên -->
                             <div class="flex space-x-3">
                                 <div class="size-12">
@@ -148,7 +189,7 @@
                             </div>
                             <!-- trên -->
 
-                            <hr class="w-full border-t border-gray-300 my-3.5">
+                            <hr class="w-full border-t border-gray-200 my-3.5">
 
                             <!-- dưới -->
                             <div class="flex justify-between">
@@ -179,6 +220,55 @@
                                             <i class="fa-solid fa-eye"></i>
                                         </div>
                                         Xem
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- dưới -->
+                        </div>
+                        <!-- cart -->
+
+                        <!-- cart -->
+                        <div class="p-5 w-full rounded-xl bg-white shadow-lg shadow-gray-300/50">
+                            <!-- trên -->
+                            <div class="flex space-x-3">
+                                <div class="size-12">
+                                    <img src="" alt="" class="size-full rounded-xl bg-orange-500">
+                                </div>
+                                <div class="flex flex-col">
+                                    <h3 class="text-lg font-semibold leading-none mb-2 mt-1">Earn 2.3% APR and Babylon Points Today</h3>
+                                    <p class="text-[13px] leading-none text-zinc-400">Click on i am not robot and get to the landing page. Enjoy !</p>
+                                </div>
+                            </div>
+                            <!-- trên -->
+
+                            <hr class="w-full border-t border-gray-200 my-3.5">
+
+                            <!-- dưới -->
+                            <div class="flex justify-between">
+                                <div class="flex items-center space-x-7">
+                                    <!-- Time -->
+                                    <div class="flex text-zinc-600 text-[17px] font-medium ">
+                                        <div class="mr-2 text-orange-500">
+                                            <i class="fa-solid fa-clock text-[17px] "></i>
+                                        </div>
+                                        5 Giây 
+                                    </div>
+
+                                    <!-- Coins -->
+                                    <div class="flex text-zinc-600 text-[17px] font-medium ">
+                                        <div class="mr-2 text-orange-500">
+                                            <i class="fa-solid fa-coins text-[17px] "></i>
+                                        </div>
+                                        6.04 Coins 
+                                    </div>
+                                </div>
+
+                                <div class="flex space-x-3.5">
+                                    <button class="bg-red-500 text-white size-9 text-sm rounded-lg focus:ring-2 focus:ring-pink-400 focus:ring-offset-2">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </button>
+                                    <button class="h-9 text-sm flex items-center font-semibold text-orange-50 bg-[#0cb948] rounded-lg px-[18px] leading-none duration-300 transition-all ring-2 ring-[#0cb948] ring-offset-2 hover:ring-offset-0">
+                                        Hoàn thành
                                     </button>
                                 </div>
                             </div>
