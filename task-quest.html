@@ -167,118 +167,80 @@
 
         <main class="pt-16 ml-60">
             <div class="p-10">
-                <h2 class="mb-8 text-[22px] font-semibold flex items-center leading-normal">Nhiệm vụ<p class="ml-3 leading-normal text-base text-orange-500 italic">1/1</p> </h2>
-                <section>
-                    <div class="text-2xl font-semibold inline-flex gap-7">
-                        <button class="underline decoration-2 decoration-orange-500 underline-offset-8">Tất cả</button>
-                        <button class="text-zinc-400 transition-all duration-300 underline-offset-8 hover:text-zinc-900 hover:underline hover:decoration-2 hover:decoration-orange-500 hover:underline-offset-4">Nhiệm vụ</button>
-                        <button class="text-zinc-400 transition-all duration-300 underline-offset-8 hover:text-zinc-900 hover:underline hover:decoration-2 hover:decoration-orange-500 hover:underline-offset-4">Hoàn thành</button>
+                <section class="grid grid-cols-2 gap-3 mb-5">
+                    <!-- <div class="grid grid-rows-3 grid-flow-col gap-4">
+                        <div class="row-span-3 ...">01</div>
+                        <div class="col-span-2 ...">02</div>
+                        <div class="row-span-2 col-span-2 ...">03</div>
+                    </div> -->
+    
+                    <!-- Lưu ý -->
+                    <div class="bg-white rounded-xl">
+                        <h3 class="text-xl px-5 py-3 font-semibold w-full border-b-2 border-gray-200">Lưu ý làm nhiệm vụ</h3>
+                        <ul class="p-5 text-sm inline-block space-y-1.5">
+                            <li class="flex items-center">
+                                <div class="mr-3 size-2.5 border-2 border-red-500 rounded-full"></div>
+                                Đừng đóng trang khi làm nhiệm vụ.
+                            </li>
+                            <li class="flex items-center">
+                                <div class="mr-3 size-2.5 border-2 border-red-500 rounded-full"></div>
+                                Đừng cố gắng hoàn thành nhiều nhiệm vụ cùng một lúc.
+                            </li>
+                        </ul>
                     </div>
-                    <div class="mt-7 w-full inline-block space-y-3.5">
-                        <!-- cart -->
-                        <div class="p-5 w-full rounded-xl bg-white shadow-lg shadow-gray-300/50">
-                            <!-- trên -->
-                            <div class="flex space-x-3">
-                                <div class="size-12">
-                                    <img src="" alt="" class="size-full rounded-xl bg-orange-500">
-                                </div>
-                                <div class="flex flex-col">
-                                    <h3 class="text-lg font-semibold leading-none mb-2 mt-1">Earn 2.3% APR and Babylon Points Today</h3>
-                                    <p class="text-[13px] leading-none text-zinc-400">Click on i am not robot and get to the landing page. Enjoy !</p>
-                                </div>
+                    <!-- Lưu ý -->
+    
+                    <div class="flex flex-col gap-3">
+                        <!-- phần thưởng -->
+                        <div class="bg-white rounded-xl">
+                            <div class="p-5 flex items-center justify-between text-xl">
+                                <h3 class="font-semibold">
+                                    Phần thưởng nhiệm vụ
+                                </h3>
+                                <p class="font-medium">
+                                    <i class="fa-solid fa-coins text-yellow-400 mr-2"></i>
+                                    <span class="font-semibold">15.00</span> Coins
+                                </p>
                             </div>
-                            <!-- trên -->
-
-                            <hr class="w-full border-t border-gray-200 my-3.5">
-
-                            <!-- dưới -->
-                            <div class="flex justify-between">
-                                <div class="flex items-center space-x-7">
-                                    <!-- Time -->
-                                    <div class="flex text-zinc-600 text-[17px] font-medium ">
-                                        <div class="mr-2 text-orange-500">
-                                            <i class="fa-solid fa-clock text-[17px] "></i>
-                                        </div>
-                                        5 Giây 
-                                    </div>
-
-                                    <!-- Coins -->
-                                    <div class="flex text-zinc-600 text-[17px] font-medium ">
-                                        <div class="mr-2 text-orange-500">
-                                            <i class="fa-solid fa-coins text-[17px] "></i>
-                                        </div>
-                                        6.04 Coins 
-                                    </div>
-                                </div>
-
-                                <div class="flex space-x-3.5">
-                                    <button class="bg-red-500 text-white size-9 text-sm rounded-lg focus:ring-2 focus:ring-pink-400 focus:ring-offset-2">
-                                        <i class="fa-regular fa-flag"></i>
-                                    </button>
-                                    <button class="h-9 text-sm flex items-center font-semibold text-orange-50 bg-[#fb8c04] rounded-lg px-[18px] leading-none duration-300 transition-all ring-2 ring-[#fb8c04] ring-offset-2 hover:ring-offset-0">
-                                        <div class="text-base mr-2">
-                                            <i class="fa-solid fa-eye text-sm"></i>
-                                        </div>
-                                        Xem
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- dưới -->
+                            <p class="px-5 py-3 border-t-2 border-gray-200 text-center text-xs font-medium text-zinc-400">
+                                ~ Phần thưởng khi hoàn thành nhiệm vụ, hãy kiểm tra sau khi làm xong ~
+                            </p>
                         </div>
-                        <!-- cart -->
-
-                        <!-- cart -->
-                        <div class="p-5 w-full rounded-xl bg-white shadow-lg shadow-gray-300/50">
-                            <!-- trên -->
-                            <div class="flex space-x-3">
-                                <div class="size-12">
-                                    <img src="" alt="" class="size-full rounded-xl bg-orange-500">
+                        <!-- phần thưởng -->
+    
+                        <!-- thời gian làm -->
+                        <div class="bg-white p-5 rounded-xl flex items-center justify-between text-2xl font-semibold">
+                            <div class="flex items-center">
+                                <div class="size-10 bg-emerald-200 flex items-center justify-center rounded-full mr-3 ring ring-green-500"> 
+                                    <i class="fa-regular fa-clock"></i>
                                 </div>
-                                <div class="flex flex-col">
-                                    <h3 class="text-lg font-semibold leading-none mb-2 mt-1">Earn 2.3% APR and Babylon Points Today</h3>
-                                    <p class="text-[13px] leading-none text-zinc-400">Click on i am not robot and get to the landing page. Enjoy !</p>
-                                </div>
+                                <p>Thời gian làm</p>
                             </div>
-                            <!-- trên -->
-
-                            <hr class="w-full border-t border-gray-200 my-3.5">
-
-                            <!-- dưới -->
-                            <div class="flex justify-between">
-                                <div class="flex items-center space-x-7">
-                                    <!-- Time -->
-                                    <div class="flex text-zinc-600 text-[17px] font-medium ">
-                                        <div class="mr-2 text-orange-500">
-                                            <i class="fa-solid fa-clock text-[17px] "></i>
-                                        </div>
-                                        5 Giây 
-                                    </div>
-
-                                    <!-- Coins -->
-                                    <div class="flex text-zinc-600 text-[17px] font-medium ">
-                                        <div class="mr-2 text-orange-500">
-                                            <i class="fa-solid fa-coins text-[17px] "></i>
-                                        </div>
-                                        6.04 Coins 
-                                    </div>
-                                </div>
-
-                                <div class="flex space-x-3.5">
-                                    <button class="bg-red-500 text-white size-9 text-sm rounded-lg focus:ring-2 focus:ring-pink-400 focus:ring-offset-2">
-                                        <i class="fa-regular fa-flag"></i>
-                                    </button>
-                                    <button class="h-9 text-sm flex items-center font-semibold text-orange-50 bg-[#0cb948] rounded-lg px-[18px] leading-none duration-300 transition-all ring-2 ring-[#0cb948] ring-offset-2 hover:ring-offset-0">
-                                        Hoàn thành
-                                        <div class="text-base ml-2">
-                                            <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
-                                        </div>
-                                    </button>
-                                </div>
-                            </div>
-                            <!-- dưới -->
+                            <p>15 Giây</p>
                         </div>
-                        <!-- cart -->
+                        <!-- thời gian làm -->
                     </div>
+                </section>
+    
+                <section class="bg-white p-5 rounded-xl flex items-center justify-between space-x-3 mb-5">
+                    <div class="text-6xl "> 
+                        <i class="fa-regular fa-lightbulb text-yellow-500"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold">Bạn biết không?</h3>
+                        <p class="text-sm">Tiền xu là bất kỳ loại tiền điện tử nào có blockchain riêng (ví dụ: BTC, ETH, LTC), trong khi Token là tài sản kỹ thuật số không có blockchain độc lập mà được xây dựng trên các blockchain hiện có (ví dụ: UNI, LINK,...)</p>
+                    </div>
+                    <button class="text-nowrap px-5 py-2.5 bg-[#fb8c04] rounded-lg font-semibold text-white">
+                        Xem thêm 
+                    </button>
+                </section>
+                <h1 class="text-6xl text-center">
+                    cap cha
+                </h1>
+                <section class="flex justify-center gap-x-3">
+                    <button class="">
+
+                    </button>
                 </section>
             </div>
         </main>
