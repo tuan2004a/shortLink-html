@@ -32,70 +32,79 @@
     </style>
     <body class="bg-[#eee]">
         <!-- Header -->
-        <header
-            class="flex items-center justify-between w-full h-16 px-10 border-b border-gray-300 fixed top-0 right-0 bg-white"
-            style="width: calc(100% - 240px);">
-            <div class="flex items-center">
-                <p class="pr-2 text-[#6b7280]">
-                    Balance:
-                </p>
-                <div
-                    class="bg-gray-200/50 text-zinc-600 inline-block py-1 px-2.5 rounded-full text-xs font-semibold border border-gray-300/60">
-                    <span class="leading-none mr-0.5">2,072.87</span>Coins
-                </div>
-                <p class="text-xl px-2 text-[#6b7280]/30">/</p>
-                <div
-                    class="bg-gray-200/50 text-zinc-600 inline-block py-1 px-2.5 rounded-full text-xs font-semibold border border-gray-300/60">
-                    <span class="leading-none mr-0.5">0.00000088</span><span>BTCs</span>
-                </div>
+        <header class="flex items-center justify-between w-full h-16 border-b border-gray-300 fixed top-0 right-0 bg-white">
+            <div class="w-60 hidden lg:block">
+                logo
             </div>
+            
+            <div class="flex items-center justify-between grow px-5 md:px-10">
 
-            <div class="flex items-center">
+                <button class="mr-10 lg:hidden">
+                    <i class="fa-solid fa-bars-staggered text-2xl"></i>
+                </button>
 
-                <div class="flex space-x-3 ">
-                    <!-- dark mode -->
-                    <div class="size-10 bg-[#fb8c04]/20 rounded-lg">
-                        <button class="size-full ">
-                            <i class="fa-regular fa-moon text-2xl text-zinc-700"></i>
+                <div class="flex items-center grow">
+                    <p class="pr-2 text-[#6b7280] hidden lg:block">
+                        Balance:
+                    </p>
+                    <div
+                        class="bg-gray-200/50 text-zinc-600 inline-block py-1 px-2.5 rounded-full text-xs font-semibold border border-gray-300/60 ">
+                        <span class="leading-none mr-0.5">2,072.87</span>Coins
+                    </div>
+                    <p class="text-xl px-2 text-[#6b7280]/30 hidden sm:block">/</p>
+                    <div
+                        class="bg-gray-200/50 text-zinc-600 inline-block py-1 px-2.5 rounded-full text-xs font-semibold border border-gray-300/60 hidden sm:block">
+                        <span class="leading-none mr-0.5">0.00000088</span><span>BTCs</span>
+                    </div>
+                </div>
+
+                <div class="flex items-center ">
+    
+                    <div class="flex space-x-3 ">
+                        <!-- dark mode -->
+                        <div class="size-10 bg-[#fb8c04]/20 rounded-lg">
+                            <button class="size-full ">
+                                <i class="fa-regular fa-moon text-2xl text-zinc-700"></i>
+                            </button>
+                        </div>
+                        <!-- dark mode -->
+    
+                        <!-- Notification -->
+                        <div class="size-10 bg-[#fb8c04]/20 rounded-lg relative">
+                            <button class="size-full">
+                                <i class="fa-regular fa-bell text-2xl text-zinc-700"></i>
+                            </button>
+                            <span class="absolute flex size-3 -top-1 -right-1">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
+                                <span
+                                    class="relative inline-flex rounded-full size-3 bg-red-600"></span>
+                            </span>
+                        </div>
+                        <!-- Notification    -->
+                    </div>
+    
+                    <!-- in4 user -->
+                    <div class="pl-3 ml-3 border-l border-[#eee] sm:pl-5 sm:ml-5 md:pl-7 md:ml-6">
+                        <button class="flex items-center">
+                            <div class="size-8 mr-3">
+                                <img src="https://i.pravatar.cc" alt
+                                    class="rounded-lg ring-orange-200 ring-offset-4 ring-2">
+                            </div>
+                            <div class="inline-block space-y-1 text-left h-full hidden md:block">
+                                <p class="text-base leading-none font-semibold">Trantuan07a</p>
+                                <p class="text-xs leading-none font-medium text-[#89879f]">Level 01</p>
+                            </div>
                         </button>
                     </div>
-                    <!-- dark mode -->
-
-                    <!-- Notification -->
-                    <div class="size-10 bg-[#fb8c04]/20 rounded-lg relative">
-                        <button class="size-full">
-                            <i class="fa-regular fa-bell text-2xl text-zinc-700"></i>
-                        </button>
-                        <span class="absolute flex size-3 -top-1 -right-1">
-                            <span
-                                class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-600 opacity-75"></span>
-                            <span
-                                class="relative inline-flex rounded-full size-3 bg-red-600"></span>
-                        </span>
-                    </div>
-                    <!-- Notification    -->
+                    <!-- in4 user -->
                 </div>
-
-                <!-- in4 user -->
-                <div class="pl-7 ml-6 border-l border-[#eee]">
-                    <button class="flex items-center">
-                        <div class="size-8 mr-3">
-                            <img src="https://i.pravatar.cc" alt
-                                class="rounded-lg ring-orange-200 ring-offset-4 ring-2">
-                        </div>
-                        <div class="inline-block space-y-1 text-left h-full">
-                            <p class="text-base leading-none font-semibold">Trantuan07a</p>
-                            <p class="text-xs leading-none font-medium text-[#89879f]">Level 01</p>
-                        </div>
-                    </button>
-                </div>
-                <!-- in4 user -->
             </div>
-
         </header>
 
         <!-- Side bar -->
-        <nav class="h-full w-60 fixed top-0 left-0 bg-white">
+        <nav class="h-[100dvh] w-60 fixed top-0 left-0 bg-white hidden lg:block">
+
             <div class="bg-[#ff782c]">
                 <!-- Logo -->
                 <div class="h-20 text-[40px] text-center font-semibold">
@@ -104,12 +113,12 @@
                 <!-- Logo -->
     
                 <div class="px-2 py-0.5">
-                    <div class="flex items-start bg-[#ff9e68]/50 text-white space-x-3 p-4 rounded-xl">
+                    <div class="flex items-start bg-[#ff9e68]/60 text-white space-x-3 px-4 py-3 rounded-xl">
                         <div class="">
-                            <i class="fa-solid fa-wallet text-[45px] text-white"></i>
+                            <i class="fa-solid fa-wallet text-[40px] text-white"></i>
                         </div>
                         <div class="leading-none">
-                            <h4 class="text-[18px] font-semibold leading-normal">$12345.677</h4>
+                            <h4 class="text-[20px] font-semibold mb-1">$12345.677</h4>
                             <small class="text-[11px] text-zinc-200">Withdraw Money</small>
                         </div>
                     </div>
@@ -142,22 +151,21 @@
                 </div>
             </div>
 
-            <ul class="text-stone-700 mt-5">
-                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold text-stone-500">Main Menu</h3>
-
-                <li class="flex items-center cursor-pointer py-3 px-8 text-[15px] font-semibold group/btn hover:bg-slate-200/60">
-                    <i class="fa-solid fa-house mr-2 text-[19px] transition-all duration-500 group-hover/btn:text-[#ff782c]"></i>
-                    <p class="group-hover/btn:text-[#ff782c] group-hover/btn:translate-x-2 transition-all duration-500">
+            <ul class="text-stone-700">
+                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold">Main Menu</h3>
+                <li
+                    class="flex items-center cursor-pointer py-3 px-6 text-[15px] font-semibold bg-orange-200/30 text-[#ff782c]">
+                    <i class="fa-solid fa-house mr-2 text-[19px]"></i>
+                    <p class="hover:text-[#ff782c]">
                         Trang chủ
                     </p>
                 </li>
 
-                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold text-stone-500">kiếm tiền</h3>
+                <h3 class="mt-4 mb-1.5 pl-6 text-xs uppercase font-semibold">kiếm tiền</h3>
 
-                <li
-                    class="flex items-center cursor-pointer py-3 px-8 text-[15px] font-semibold bg-orange-200/30 text-[#ff782c]">
-                    <i class="fa-solid fa-list-check mr-2 text-[19px]"></i>
-                    <p class="hover:text-[#ff782c]">
+                <li class="flex items-center cursor-pointer py-3 px-6 text-[15px] font-semibold  group/btn hover:bg-slate-200/60">
+                    <i class="fa-solid fa-list-check mr-2 text-[19px] transition-all duration-500 group-hover/btn:text-[#ff782c]"></i>
+                    <p class="group-hover/btn:text-[#ff782c] group-hover/btn:translate-x-2 transition-all duration-500">
                         Nhiệm vụ
                     </p>
                 </li>
@@ -165,14 +173,20 @@
 
         </nav>
 
-        <main class="pt-16 ml-60">
-            <div class="p-10">
+        <main class="pt-16 lg:ml-60">
+            <div class="p-5 md:p-10">
                 <h2 class="mb-8 text-[22px] font-semibold flex items-center leading-normal">Nhiệm vụ<p class="ml-3 leading-normal text-base text-orange-500 italic">1/1</p> </h2>
                 <section>
-                    <div class="text-2xl font-semibold inline-flex gap-7">
-                        <button class="underline decoration-2 decoration-orange-500 underline-offset-8">Tất cả</button>
-                        <button class="text-zinc-400 transition-all duration-300 underline-offset-8 hover:text-zinc-900 hover:underline hover:decoration-2 hover:decoration-orange-500 hover:underline-offset-4">Nhiệm vụ</button>
-                        <button class="text-zinc-400 transition-all duration-300 underline-offset-8 hover:text-zinc-900 hover:underline hover:decoration-2 hover:decoration-orange-500 hover:underline-offset-4">Hoàn thành</button>
+                    <div class="text-white font-semibold inline-flex gap-5 text-sm">
+                        <button class="px-3.5 py-2.5 bg-[#ef7e56] rounded-lg">
+                            Tất cả <span>(01)</span>
+                        </button>
+                        <button class="px-3.5 py-2.5 rounded-lg text-black font-normal">
+                            Nhiệm vụ <span>(01)</span>
+                        </button>
+                        <button class="px-3.5 py-2.5 rounded-lg text-black font-normal">
+                            Hoàn thành <span>(01)</span>
+                        </button>
                     </div>
                     <div class="mt-7 w-full inline-block space-y-3.5">
                         <!-- cart -->
@@ -192,7 +206,7 @@
                             <hr class="w-full border-t border-gray-200 my-3.5">
 
                             <!-- dưới -->
-                            <div class="flex justify-between">
+                            <div class="flex justify-between flex-wrap gap-y-5 sm:gap-y-0">
                                 <div class="flex items-center space-x-7">
                                     <!-- Time -->
                                     <div class="flex text-zinc-600 text-[17px] font-medium ">
@@ -244,7 +258,7 @@
                             <hr class="w-full border-t border-gray-200 my-3.5">
 
                             <!-- dưới -->
-                            <div class="flex justify-between">
+                            <div class="flex justify-between flex-wrap gap-y-5 sm:gap-y-0">
                                 <div class="flex items-center space-x-7">
                                     <!-- Time -->
                                     <div class="flex text-zinc-600 text-[17px] font-medium ">

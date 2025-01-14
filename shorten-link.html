@@ -174,81 +174,115 @@
         </nav>
 
         <main class="pt-16 lg:ml-60">
-            <div class="p-5 md:p-10">
-                <section class="grid gap-3 mb-5 md:grid-cols-2">
-                    <!-- <div class="grid grid-rows-3 grid-flow-col gap-4">
-                        <div class="row-span-3 ...">01</div>
-                        <div class="col-span-2 ...">02</div>
-                        <div class="row-span-2 col-span-2 ...">03</div>
-                    </div> -->
-    
-                    <!-- Lưu ý -->
-                    <div class="bg-white rounded-xl">
-                        <h3 class="text-xl px-5 py-3 font-semibold w-full border-b-2 border-gray-200">Lưu ý làm nhiệm vụ</h3>
-                        <ul class="p-5 text-sm inline-block space-y-1.5">
-                            <li class="flex items-center">
-                                <div class="mr-3 size-2.5 border-2 border-red-500 rounded-full"></div>
-                                Đừng đóng trang khi làm nhiệm vụ.
-                            </li>
-                            <li class="flex items-center">
-                                <div class="mr-3 size-2.5 border-2 border-red-500 rounded-full"></div>
-                                Đừng cố gắng hoàn thành nhiều nhiệm vụ cùng một lúc.
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Lưu ý -->
-    
-                    <div class="flex flex-col gap-3">
-                        <!-- phần thưởng -->
-                        <div class="bg-white rounded-xl">
-                            <div class="p-5 flex items-center justify-between text-xl">
-                                <h3 class="font-semibold">
-                                    Phần thưởng nhiệm vụ
-                                </h3>
-                                <p class="font-medium">
-                                    <i class="fa-solid fa-coins text-yellow-500 mr-2"></i>
-                                    <span class="font-semibold">15.00</span> Coins
-                                </p>
-                            </div>
-                            <p class="px-5 py-3 border-t-2 border-gray-200 text-center text-xs font-medium text-zinc-400">
-                                ~ Phần thưởng khi hoàn thành nhiệm vụ, hãy kiểm tra sau khi làm xong ~
-                            </p>
-                        </div>
-                        <!-- phần thưởng -->
-    
-                        <!-- thời gian làm -->
-                        <div class="bg-white p-5 rounded-xl flex items-center justify-between text-2xl font-semibold">
-                            <div class="flex items-center">
-                                <div class="size-10 bg-emerald-200/70 flex items-center justify-center rounded-full mr-3 ring ring-green-500/80"> 
-                                    <i class="fa-regular fa-clock"></i>
-                                </div>
-                                <p>Thời gian làm</p>
-                            </div>
-                            <p>15 Giây</p>
-                        </div>
-                        <!-- thời gian làm -->
-                    </div>
-                </section>
-    
-                <section class="bg-white p-5 rounded-xl flex items-center justify-between space-x-3 mb-5">
-                    <div class="text-6xl "> 
-                        <i class="fa-regular fa-lightbulb text-yellow-500"></i>
-                    </div>
+            <div class="p-5 md:p-10 ">
+                <h2 class="mb-8 text-[22px] font-semibold flex items-center leading-normal">Rút gọn link</h2>
+
+                <section class="bg-white size-full rounded-lg p-5">
+                    <h4 class="text-left leading-normal text-lg font-medium">Tạo URL mới</h4>
+
                     <div>
-                        <h3 class="text-xl font-semibold">Bạn biết không?</h3>
-                        <p class="text-[12.5px]">Tiền xu là bất kỳ loại tiền điện tử nào có blockchain riêng (ví dụ: BTC, ETH, LTC), trong khi Token là tài sản kỹ thuật số không có blockchain độc lập mà được xây dựng trên các blockchain hiện có (ví dụ: UNI, LINK,...)</p>
+                        <label for="" class="flex flex-col mt-10 text-zinc-500">
+                            URL
+                            <input type="text" class="outline-none px-4 py-3 border border-gray-200 rounded-lg text-sm mt-2 text-zinc-900" placeholder="Rút gọn URL của bạn">
+                        </label>
+    
+                        <button class="py-3 px-10 bg-[#fb8c04] rounded-md text-white font-semibold mt-5 leading-normal">
+                            Rút gọn 
+                        </button>
                     </div>
-                    <button class="text-nowrap px-5 py-2.5 bg-[#fb8c04] rounded-lg font-semibold text-white">
-                        Xem thêm 
-                    </button>
+                    <div class="pt-6 mt-10 border-t border-gray-200">
+                        <h4 class="font-bold text-zinc-600">Thành Công!</h4>
+                        <p class="text-sm font-medium text-zinc-500 mt-4">URL rút gọn của bạn</p>
+                        <label class="flex mt-1.5">
+                            <input type="text" id="disabled-input-2" aria-label="disabled input 2" class="bg-[#e9ecef] border border-orange-200 rounded-l-lg text-sm w-full px-4 py-3 cursor-not-allowed text-zinc-500" value="URL rút gọn thành công ở đây" disabled readonly>
+                            <button class="text-nowrap text-sm py-3 px-4 border border-orange-200 leading-normal text-[#fb8c04] font-medium">
+                                Sao chép
+                            </button>
+                            <button class="text-nowrap text-sm py-3 px-4 border border-orange-200 leading-normal text-[#fb8c04] font-medium rounded-r-lg">
+                                Chia sẻ
+                            </button>
+                        </label>
+                    </div>
                 </section>
-                <h1 class="text-6xl text-center">
-                    cap cha
-                </h1>
-                <section class="flex justify-center gap-x-3">
-                    <button class="">
-                        Bắt đầu
-                    </button>
+
+                <section class="bg-white size-full rounded-lg p-5 mt-10">
+                    <h4 class="text-left leading-normal text-lg font-medium flex items-center">Link của bạn<p class="ml-3 leading-normal text-sm font-medium text-orange-500">Tổng:<span class="ml-1 italic underline decoration-2 decoration-amber-500">00</span></p></h4>
+
+                    <div class="w-full bg-[#f75676] text-white text-sm px-6 py-4 rounded-lg mt-5">
+                        Bạn chưa rút gọn liên kết nào. Bạn còn chờ gì nữa?
+                    </div>
+
+                    <div class="mt-5 flex flex-wrap sm:flex-nowrap gap-3">
+                        <input type="text" class="outline-none px-4 py-3 border border-gray-200 rounded-lg text-sm text-zinc-900 w-full md:w-1/2 " placeholder="Tìm kiếm">
+                        <button class="py-2.5 px-4 bg-[#fb8c04] rounded-md text-white font-semibold leading-normal text-nowrap">
+                            Tìm kiếm
+                        </button>
+                    </div>                    
+
+                    <div class="relative overflow-x-auto block w-full shadow-lg shadow-gray-200 mt-5 rounded-lg text-nowrap">
+                        <table class="w-full text-sm text-left text-gray-500">
+                            <thead class="text-xs text-gray-700 uppercase bg-[#f6f9fc]">
+                                <tr>
+                                    <th scope="col" class="px-6 py-3">
+                                        URL
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Liên Kết Gốc
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Lượt Truy Cập
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <div class="flex items-center">
+                                            Thời Gian Tạo
+                                        </div>
+                                    </th>
+                                    <th scope="col" class="px-6 py-3">
+                                        <span class="sr-only">Hành Động</span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="bg-white border-b">
+                                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
+                                        <a href="#" class="line-clamp-1">
+                                            https://j2c.cc/a74d9776
+                                        </a>
+                                    </th>
+                                    <td class="px-6 py-4">
+                                        <a href="#" class="line-clamp-1">
+                                            youtube.com
+                                        </a>
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        0
+                                    </td>
+                                    <td class="px-6 py-4">
+                                        1 giây trước
+                                    </td>
+                                    <td class="px-5 py-4 flex items-center gap-3">
+                                        <button class="size-7 bg-violet-500 rounded-md text-white shadow-lg shadow-gray-300 flex items-center justify-center duration-200 transition-all hover:-translate-y-0.5">
+                                            <i class="fa-solid fa-eye"></i>
+                                        </button>
+                                        <button class="size-7 bg-blue-500 rounded-md text-white shadow-lg shadow-gray-300 flex items-center justify-center duration-200 transition-all hover:-translate-y-0.5">
+                                            <i class="fa-solid fa-pen-to-square text-sm"></i>
+                                        </button>
+                                        <button class="size-7 bg-green-500 rounded-md text-white shadow-lg shadow-gray-300 flex items-center justify-center duration-200 transition-all hover:-translate-y-0.5">
+                                            <i class="fa-solid fa-share-from-square text-sm"></i>
+                                        </button>
+
+                                        <button class="size-7 bg-red-500 rounded-md text-white shadow-lg shadow-gray-300 flex items-center justify-center duration-200 transition-all hover:-translate-y-0.5">
+                                            <i class="fa-solid fa-trash-can text-sm"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
             </div>
         </main>
