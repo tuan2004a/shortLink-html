@@ -193,117 +193,97 @@
 
         <main class="pt-16 lg:ml-60">
             <div class="p-5 md:p-10">
-                <h2 class="mb-8 text-[22px] font-semibold flex items-center leading-normal">Thống kê <p class="ml-2 leading-normal text-sm font-medium text-orange-500">Welcome Back <span class="italic underline decoration-2 decoration-amber-500">Yatin Sharma</span>!</p> </h2>
-                <section class="grid  gap-5 mb-5 md:grid-cols-2 xl:grid-cols-4">
-                    <div
-                        class="p-5 rounded-lg bg-white relative overflow-hidden relative after:absolute after:-bottom-6 after:-right-6 after:size-12 after:rounded-full after:z-10 after:bg-orange-200 before:absolute before:-bottom-6 before:-right-6 before:size-10 before:rounded-full before:bg-orange-400 before:z-20 ">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h1 class="text-zinc-400 text-sm">Total User</h1>
-                                <p class=" text-2xl font-semibold">$258</p>
+                <div class="w-full flex justify-between items-center mb-8">
+                    <h2 class="text-[22px] font-semibold flex items-center leading-normal">Trung tâm tài khoản</h2>
+                    <button class="rounded-xl text-sm font-medium bg-white px-3 py-2 border border-gray-300 hover:text-[#ff782c]">
+                        ID:<span class="font-semibold ml-1">329607912</span>
+                        <i class="fa-regular fa-copy ml-2"></i>
+                    </button>
+                </div>
+                <section class="flex items-start justify-between space-x-7">
+                    <aside class="p-5 bg-white w-72 flex flex-col items-center rounded-xl">
+                        <div class="size-40 rounded-full">
+                            <img src="https://i.pravatar.cc" alt="" class="rounded-full">
+                        </div>
+                        <button class="px-4 py-2 border border-gray-800 font-medium text-sm leading-normal mt-5">
+                            Thay đổi ảnh
+                        </button>
+                        <!-- <p>Click to upload or drag and drop <br> SVG, PNG, JPG or GIF (MAX. 800x400px) </p> -->
+                    </aside>
+                    <div class="bg-white w-full rounded-xl p-5">
+                        <div class="w-full flex items-center gap-3 border-b border-gray-300 pb-2.5">
+                            <button class="flex items-center justify-center text-[#ff782c] leading-normal font-semibold px-1.5 py-1 relative after:absolute after:-bottom-3 after:h-0.5 after:w-full after:bg-[#ff782c] after:rounded-full">
+                                <i class="fa-solid fa-passport mr-1.5"></i>
+                                Tổng Quan
+                            </button>
+                            <button class="flex items-center justify-center leading-normal font-semibold px-3 py-1 text-zinc-400 transition-all duration-200 hover:text-zinc-900">
+                                <i class="fa-solid fa-user mr-1.5 "></i>
+                                Thông tin cá nhân
+                            </button>
+                            <button class="flex items-center justify-center leading-normal font-semibold px-3 py-1 text-zinc-400 transition-all duration-200 hover:text-zinc-900">
+                                <i class="fa-solid fa-shield-halved mr-1.5"></i>
+                                Quản lý mật khẩu
+                            </button>
+                            <button class="flex items-center justify-center leading-normal font-semibold px-3 py-1 text-zinc-400 transition-all duration-200 hover:text-zinc-900">
+                                <i class="fa-solid fa-circle-nodes mr-1.5"></i>
+                                Liên Kết Tài Khoản
+                            </button>
+                        </div>
+                        <div class="pt-5">
+                            <h4 class="font-bold text-xl leading-normal">Thông Tin Cá Nhân</h4>
+                            <div class="w-full flex justify-between items-center py-2.5 my-1">
+                                <span class="flex flex-col items-start">
+                                    <small class="text-base font-semibold text-zinc-500 leading-normal">
+                                        Tên Người Dùng
+                                    </small>
+                                    <strong class="font-semibold text-[17px] leading-normal text-zinc-600">
+                                        t****7a
+                                    </strong>
+                                </span>
                             </div>
-                            <div>
-                                <div class="size-16">
-                                    <img src="https://i.pravatar.cc/" alt
-                                        class="size-full rounded-full">
-                                </div>
+                            <div class="w-full flex justify-between items-center py-2.5 my-1">
+                                <span class="flex flex-col items-start">
+                                    <small class="text-base font-semibold text-zinc-500 leading-normal">
+                                        Email
+                                    </small>
+                                    <strong class="font-semibold text-[17px] leading-normal text-zinc-600">
+                                        bi****04@gmail.com
+                                    </strong>
+                                </span>
+                                <button class="text-sm leading-normal italic transition-all duration-200 font-semibold tracking-wider text-orange-500 hover:text-orange-400">
+                                    Thay Đổi Email Liên Kết 
+                                </button>
                             </div>
                         </div>
-                        <div class="flex items-center gap-3 mt-6">
-                            <div class="text-[#00b69b] bg-emerald-600/10 py-1 px-2 text-sm rounded">
-                                2.80%
-                                <i class="fa-solid fa-angle-up text-sm ml-0.5"></i>
+                        <div class="pt-5">
+                            <h4 class="font-bold text-xl leading-normal">Quản lý mật khẩu</h4>
+                            <div class="w-full flex justify-between items-center py-2.5 my-1">
+                                <span class="flex flex-col items-start">
+                                    <small class="text-base font-semibold text-zinc-500 leading-normal">
+                                        Mật Khẩu
+                                    </small>
+                                </span>
+                                <button class="text-sm leading-normal italic transition-all duration-200 font-semibold tracking-wider text-orange-500 hover:text-orange-400">
+                                    Thay Đổi mật khẩu
+                                </button>
                             </div>
-                            <span class="text-sm text-zinc-400 font-medium">
-                                Tháng này
-                            </span>
+                            <div class="w-full flex justify-between items-center py-2.5 my-1">
+                                <span class="flex flex-col items-start">
+                                    <small class="text-base font-semibold text-zinc-500 leading-normal mb-1">
+                                        Thiết Bị Tin Cậy
+                                    </small>
+                                    <p class="text-xs font-medium text-zinc-400">
+                                        HoYoverse cho phép bạn bỏ qua bước xác thực danh tính kèm theo trên thiết bị được tin cậy
+                                    </p>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-
-                    <div
-                        class="p-5 rounded-lg bg-white relative overflow-hidden relative after:absolute after:-bottom-6 after:-right-6 after:size-12 after:rounded-full after:z-10 after:bg-orange-200 before:absolute before:-bottom-6 before:-right-6 before:size-10 before:rounded-full before:bg-orange-400 before:z-20 ">
-                        <div class="flex items-center justify-between">
+                        <div class="pt-5">
+                            <h4 class="font-bold text-xl leading-normal">Liên kết tài khoản</h4>
                             <div>
-                                <h1 class="text-zinc-400 text-sm">Total User</h1>
-                                <p class=" text-2xl font-semibold">$258</p>
-                            </div>
-                            <div>
-                                <div class="size-16">
-                                    <img src="https://i.pravatar.cc/" alt
-                                        class="size-full rounded-full">
-                                </div>
+                                
                             </div>
                         </div>
-                        <div class="flex items-center gap-3 mt-6">
-                            <div class="text-[#00b69b] bg-emerald-600/10 py-1 px-2 text-sm rounded">
-                                2.80%
-                                <i class="fa-solid fa-angle-up text-sm ml-0.5"></i>
-                            </div>
-                            <span class="text-sm text-zinc-400 font-medium">
-                                Tháng này
-                            </span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="p-5 rounded-lg bg-white relative overflow-hidden relative after:absolute after:-bottom-6 after:-right-6 after:size-12 after:rounded-full after:z-10 after:bg-orange-200 before:absolute before:-bottom-6 before:-right-6 before:size-10 before:rounded-full before:bg-orange-400 before:z-20 ">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h1 class="text-zinc-400 text-sm">Total User</h1>
-                                <p class=" text-2xl font-semibold">$258</p>
-                            </div>
-                            <div>
-                                <div class="size-16">
-                                    <img src="https://i.pravatar.cc/" alt
-                                        class="size-full rounded-full">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3 mt-6">
-                            <div class="text-[#00b69b] bg-emerald-600/10 py-1 px-2 text-sm rounded">
-                                2.80%
-                                <i class="fa-solid fa-angle-up text-sm ml-0.5"></i>
-                            </div>
-                            <span class="text-sm text-zinc-400 font-medium">
-                                Tháng này
-                            </span>
-                        </div>
-                    </div>
-
-                    <div
-                        class="p-5 rounded-lg bg-white relative overflow-hidden relative after:absolute after:-bottom-6 after:-right-6 after:size-12 after:rounded-full after:z-10 after:bg-orange-200 before:absolute before:-bottom-6 before:-right-6 before:size-10 before:rounded-full before:bg-orange-400 before:z-20 ">
-                        <div class="flex items-center justify-between">
-                            <div>
-                                <h1 class="text-zinc-400 text-sm">Total User</h1>
-                                <p class=" text-2xl font-semibold">$258</p>
-                            </div>
-                            <div>
-                                <div class="size-16">
-                                    <img src="https://i.pravatar.cc/" alt
-                                        class="size-full rounded-full">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex items-center gap-3 mt-6">
-                            <div class="text-[#00b69b] bg-emerald-600/10 py-1 px-2 text-sm rounded">
-                                2.80%
-                                <i class="fa-solid fa-angle-up text-sm ml-0.5"></i>
-                            </div>
-                            <span class="text-sm text-zinc-400 font-medium">
-                                Tháng này
-                            </span>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="grid grid-cols-2 gap-5">
-                    <div class="p-5 bg-white rounded-xl">
-                        <h1 class="font-semibold text-lg leading-normal">Crypto Statistics <p class="font-normal text-[13px] leading-normal text-zinc-500 mt-1">Lorem ipsum dolor sit amet, consectetur</p></h1>
-
-                    </div>
-                    <div class="p-5 bg-white rounded-xl">
-                        <h1 class="font-semibold text-lg leading-normal">Crypto Statistics <p class="font-normal text-[13px] leading-normal text-zinc-500 mt-1">Lorem ipsum dolor sit amet, consectetur</p></h1>
-
                     </div>
                 </section>
             </div>
